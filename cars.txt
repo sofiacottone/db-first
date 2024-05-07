@@ -1,0 +1,25 @@
+cars
+
+id - INT - PRIMARY_KEY - NOTNULL - AUTO_INCREMENT - UNIQUE
+
+price - DECIMAL(8,2) - NOTNULL
+seats - TINYINT - NULL
+doors - TINYINT - NULL
+mileage - MEDIUMINT - NOTNULL
+previous_owners - TINYINT - NULL
+power - SMALLINT - NOTNULL
+gear - TINYINT - NULL
+
+first_registration - YEAR - NOTNULL
+last_service - YEAR - NULL
+
+make - VARCHAR(25) - NOTNULL
+model - VARCHAR(30) - NOTNULL
+fuel_type - VARCHAR(20) - NOTNULL
+type - VARCHAR(30) - DEFAULT('used')
+color - VARCHAR(20) - NULL
+upholstery - VARCHAR(20) - NULL
+gearbox - VARCHAR(10) - NOTNULL
+traction - VARCHAR(10) - NULL
+plate_num - VARCHAR(7) - NULL - UNIQUE
+notes - TEXT - NULL
